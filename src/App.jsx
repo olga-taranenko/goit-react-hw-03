@@ -41,7 +41,7 @@ function App() {
       <ContactForm onAddContact={onAddContact} />
       <SearchBox handleSearch={setSearchValue} />
       <ContactList
-        list={filteredContacts.length > 0 ? filteredContacts : initialContacts}
+        list={filteredContacts.length > 0 ? filteredContacts : data}
         onDeleteContact={onDeleteContact}
       />
     </div>
